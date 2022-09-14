@@ -25,6 +25,28 @@
             <button id="get_weather">Отримати погоду</button>
             <button id="reset_data">Скинути дані</button>
         </p>
+        <p>
+            <div class="form_div">
+            <form>
+            <p>
+                <input checked="true" type="radio" id="current_selector" name="forecast_selector">
+                <label for="current_selector">Поточна погода</label>
+            </p>
+            <p>
+                <input type="radio" id="tomorrow_morning_sector" name="forecast_selector">
+                <label for="tomorrow_morning_sector">Завтрашній ранок (9:00)</label>
+            </p>
+            <p>
+                <input type="radio" id="tomorrow_midday_sector" name="forecast_selector">
+                <label for="tomorrow_midday_sector">Завтрашній обід (14:00)</label>
+            </p>
+            <p>
+                <input type="radio" id="tomorrow_evening_sector" name="forecast_selector">
+                <label for="tomorrow_evening_sector">Завтрашній вечір (19:00)</label>
+            </p>
+            </form>
+        </div>
+        </p>
     </fieldset>
         <fieldset>
             <legend>Інформація про поточну погоду</legend>
