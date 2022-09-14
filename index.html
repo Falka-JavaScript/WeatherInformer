@@ -4,16 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Погодний інформер</title>
 </head>
 <body>
 <header>
-    <h1>Weather informer</h1>   
+    <h1>Погодний інформер</h1>   
 </header>
 <main>
-    <!---->
-    <button id="get_weather">Get weather</button>
-    <!---->
+    <hr>
+    <div id="data">
+        <fieldset>
+            <legend>Виберіть місто для отримання інформації про погоду</legend>
+        
+        <p>
+            <label for="city">Місто: </label>
+            <input type="text" id="city" placeholder="Введіть назву міста:"/>
+        </p>
+        <p>
+            <button id="get_weather">Отримати погоду</button>
+            <button id="reset_data">Скинути дані</button>
+        </p>
+    </fieldset>
+        <fieldset>
+            <legend>Інформація про поточну погоду</legend>
+        </fieldset>
+    </div>
+    <footer>
+        <h4>Copyright: &copy; IT-Academy STEP - Kyiv, 2022</h4>
+        </footer>   
 </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/main.js"></script>
